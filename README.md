@@ -88,6 +88,14 @@ Codex should:
 
 Explicit `--benchmark-command` values are treated as commands that print their own `METRIC name=value` lines. To time a raw workload instead, pass `--benchmark-prints-metric false`.
 
+For thematic equity or portfolio research, keep research outputs file-native and let Codex Autoresearch measure evidence debt instead of pretending to optimize returns:
+
+```text
+Use Codex Autoresearch with the theme-research-gap recipe catalog to maintain a GitHub-native thematic research workspace. Start with AI infrastructure power demand, build the causal chain, scenarios, evidence log, exposure map, and next research queue.
+```
+
+The starter research-OS scaffold lives in [docs/research-os](docs/research-os/README.md) and `plugins/codex-autoresearch/assets/research-os`.
+
 For product, docs, UX, or broad research, ask for a quality-gap loop:
 
 ```text
