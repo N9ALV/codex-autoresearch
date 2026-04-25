@@ -1,0 +1,32 @@
+id: theme-validity
+scale: 1-5
+purpose: Score whether a thematic claim is real, durable, and causally supported.
+criteria:
+  - id: structural_durability
+    label: Structural durability
+    weight: 0.20
+    prompt: Is the driver likely to persist across cycles rather than fade as a one-off narrative?
+  - id: causal_clarity
+    label: Causal clarity
+    weight: 0.15
+    prompt: Is the mechanism from driver to economic outcome explicit and falsifiable?
+  - id: evidence_quality
+    label: Evidence quality
+    weight: 0.20
+    prompt: Are material claims supported by primary, dated, or otherwise reliable sources?
+  - id: economic_materiality
+    label: Economic materiality
+    weight: 0.15
+    prompt: Is the potential revenue/cost/profit pool large enough to matter?
+  - id: time_horizon_visibility
+    label: Time horizon visibility
+    weight: 0.10
+    prompt: Is the timeframe for adoption, spending, or disruption visible enough to underwrite?
+  - id: disconfirmation_clarity
+    label: Disconfirmation clarity
+    weight: 0.10
+    prompt: Are there concrete observations that would weaken or invalidate the theme?
+  - id: consensus_distortion_risk
+    label: Consensus distortion risk
+    weight: 0.10
+    prompt: Is the market narrative likely to be ahead of evidence or fundamentals?
