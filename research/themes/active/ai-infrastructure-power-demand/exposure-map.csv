@@ -1,0 +1,7 @@
+layer,exposure_type,examples,status,evidence_quality,next_action
+Data center developers,direct beneficiary,"hyperscalers, colocation operators",placeholder,low,"Map capex plans and power procurement requirements"
+Power generation,direct/second-order beneficiary,"utilities, IPPs, generation developers",placeholder,low,"Separate regulated returns from merchant exposure"
+Grid and transmission,bottleneck/beneficiary,"transmission equipment, grid operators",placeholder,low,"Validate interconnection backlog and capex plans"
+Electrical equipment,direct beneficiary,"power management, transformers, switchgear",placeholder,low,"Identify public companies with actual revenue exposure"
+Thermal management,direct beneficiary,"cooling infrastructure, liquid cooling",placeholder,low,"Assess margin sensitivity and customer concentration"
+Potential victims,impaired exposure,"power-constrained regions, high-cost operators",placeholder,low,"Define negative exposure and hedging candidates"
