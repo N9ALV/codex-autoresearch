@@ -1,0 +1,49 @@
+{
+  "recipes": [
+    {
+      "id": "theme-research-gap",
+      "title": "Theme research quality gap",
+      "metricName": "quality_gap",
+      "metricUnit": "gaps",
+      "direction": "lower",
+      "benchmarkCommand": "node plugins/codex-autoresearch/scripts/autoresearch.mjs quality-gap --cwd . --research-slug theme-research",
+      "benchmarkPrintsMetric": true,
+      "checksCommand": "",
+      "scope": [
+        "themes",
+        "companies",
+        "portfolios",
+        "rubrics",
+        "schemas",
+        "autoresearch.research/theme-research"
+      ],
+      "caveats": [
+        "Use this for theme-first research packets, not buy/sell automation.",
+        "Treat quality_gap as evidence/checklist debt; scenario scores remain analytical outputs."
+      ],
+      "tags": ["research", "finance", "thematic", "quality-gap"]
+    },
+    {
+      "id": "portfolio-theme-review",
+      "title": "Portfolio theme exposure review",
+      "metricName": "research_gap",
+      "metricUnit": "gaps",
+      "direction": "lower",
+      "benchmarkCommand": "node plugins/codex-autoresearch/scripts/autoresearch.mjs quality-gap --cwd . --research-slug portfolio-theme-review",
+      "benchmarkPrintsMetric": true,
+      "checksCommand": "",
+      "scope": [
+        "themes",
+        "companies",
+        "portfolios",
+        "rubrics/portfolio-theme-exposure.yaml",
+        "autoresearch.research/portfolio-theme-review"
+      ],
+      "caveats": [
+        "Use this to prioritize re-underwriting and exposure review, not automated allocation.",
+        "Large raw artifacts should be referenced by manifests rather than committed into Git."
+      ],
+      "tags": ["research", "finance", "portfolio", "thematic"]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/autoresearch/scenario.schema.json",
+  "title": "Theme Scenario Set",
+  "type": "object",
+  "required": ["theme_id", "as_of", "scenarios"],
+  "properties": {
+    "theme_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "as_of": { "type": "string", "format": "date" },
+    "scenarios": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "weight", "narrative", "drivers", "disconfirming_signals"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "weight": { "type": "number", "minimum": 0, "maximum": 1 },
+          "narrative": { "type": "string" },
+          "drivers": { "type": "array", "items": { "type": "string" } },
+          "disconfirming_signals": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

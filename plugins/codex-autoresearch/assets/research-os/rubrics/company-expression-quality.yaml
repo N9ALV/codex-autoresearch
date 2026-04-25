@@ -1,0 +1,25 @@
+id: company-expression-quality
+scale: 1-5
+purpose: Score whether a company/security is a good expression of a linked theme.
+criteria:
+  - id: revenue_exposure
+    label: Revenue exposure
+    weight: 0.20
+  - id: margin_sensitivity
+    label: Margin sensitivity
+    weight: 0.15
+  - id: competitive_position
+    label: Competitive position
+    weight: 0.15
+  - id: evidence_quality
+    label: Evidence quality
+    weight: 0.15
+  - id: valuation_risk
+    label: Valuation risk
+    weight: 0.15
+  - id: theme_purity
+    label: Theme purity
+    weight: 0.10
+  - id: time_horizon_fit
+    label: Time horizon fit
+    weight: 0.10

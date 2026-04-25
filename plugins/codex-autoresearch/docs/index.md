@@ -24,6 +24,7 @@ Additional topic pages:
 - [Getting started](getting-started.md)
 - [Operator workflows](operator-workflows.md)
 - [Evidence and safety](evidence-and-safety.md)
+- [Thematic research OS](../../../docs/research-os/README.md)
 
 ## Documentation Boundary
 

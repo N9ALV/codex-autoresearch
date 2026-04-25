@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/autoresearch/evidence.schema.json",
+  "title": "Evidence Log Entry",
+  "type": "object",
+  "required": ["id", "date", "claim", "source", "source_type", "supports"],
+  "properties": {
+    "id": { "type": "string" },
+    "date": { "type": "string", "format": "date" },
+    "claim": { "type": "string" },
+    "source": { "type": "string" },
+    "source_type": {
+      "type": "string",
+      "enum": ["filing", "transcript", "company_data", "regulatory", "industry_data", "market_data", "article", "model", "manual_note", "other"]
+    },
+    "supports": {
+      "type": "string",
+      "enum": ["theme_validity", "theme_investability", "company_expression", "bear_case", "disconfirmation", "portfolio_exposure", "other"]
+    },
+    "staleness": { "type": "string", "enum": ["fresh", "watch", "stale", "unknown"] },
+    "confidence": { "type": "string", "enum": ["low", "medium", "high"] }
+  },
+  "additionalProperties": true
+}

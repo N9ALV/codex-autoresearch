@@ -42,6 +42,19 @@ node scripts/autoresearch.mjs setup-plan --cwd <project> --catalog ./recipes.jso
 
 Over MCP, external catalog setup guidance can materialize shell commands, so pass `allow_unsafe_command: true` deliberately.
 
+## Research OS Catalog
+
+`assets/research-os/recipes.json` adds file-native research recipes without changing the built-in recipe list yet:
+
+```bash
+node scripts/autoresearch.mjs setup --cwd <workspace> --catalog assets/research-os/recipes.json --recipe theme-research-gap
+node scripts/autoresearch.mjs setup --cwd <workspace> --catalog assets/research-os/recipes.json --recipe portfolio-theme-review
+```
+
+Use these when the useful unit of work is evidence closure, scenario revision, exposure mapping, or review-queue generation rather than code performance. The primary metric is evidence/checklist debt, not investment truth.
+
+Starter rubrics, schemas, and packet templates live in `assets/research-os`.
+
 ## Good Recipe Shape
 
 A good recipe:
