@@ -1,0 +1,42 @@
+theme_id: ai-infrastructure-power-demand
+as_of: 2026-04-25
+status: demo
+scenarios:
+  - id: bear-bottleneck
+    label: Bear / bottleneck case
+    weight: 0.30
+    narrative: The theme is real but constrained by grid interconnection, equipment lead times, permitting, power costs, or capital intensity. Revenue conversion is slower than narrative expectations.
+    drivers:
+      - grid connection delays
+      - equipment shortages
+      - local permitting opposition
+      - high power prices
+    disconfirming_signals:
+      - faster interconnection approvals
+      - equipment capacity expansion clears backlog
+      - utilities and suppliers show durable order conversion
+  - id: base
+    label: Base case
+    weight: 0.50
+    narrative: AI infrastructure buildout continues, with uneven but underwritable demand for power, cooling, grid equipment, and utility capex.
+    drivers:
+      - steady data center capex
+      - moderate grid investment
+      - selective value capture by equipment and power-management suppliers
+    disconfirming_signals:
+      - demand estimates revised lower
+      - margin compression across exposed suppliers
+      - evidence shows capex without profit capture
+  - id: bull-acceleration
+    label: Bull / acceleration case
+    weight: 0.20
+    narrative: AI inference demand, hyperscaler capex, and power scarcity reinforce each other, creating sustained order growth and pricing power for select value-chain layers.
+    drivers:
+      - accelerated compute deployment
+      - long equipment backlogs
+      - pricing power in constrained components
+      - utility capex acceleration
+    disconfirming_signals:
+      - efficiency gains flatten power demand
+      - new supply rapidly clears bottlenecks
+      - public-market multiples derate despite order growth
