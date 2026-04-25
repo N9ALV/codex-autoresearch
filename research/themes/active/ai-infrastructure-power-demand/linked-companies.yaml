@@ -1,0 +1,6 @@
+theme_id: ai-infrastructure-power-demand
+as_of: 2026-04-25
+status: empty-placeholder
+companies: []
+# Add companies only after exposure type and evidence quality can be recorded.
+# exposure_type options: pure-play expression, partial beneficiary, second-order beneficiary, supplier, customer, victim, hedge, narrative-only exposure
