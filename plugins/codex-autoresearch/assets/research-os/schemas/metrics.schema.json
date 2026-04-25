@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/autoresearch/metrics.schema.json",
+  "title": "Research Packet Metrics",
+  "type": "object",
+  "required": ["research_gap"],
+  "properties": {
+    "research_gap": { "type": "number", "minimum": 0 },
+    "quality_gap": { "type": "number", "minimum": 0 },
+    "theme_validity": { "type": "number", "minimum": 0, "maximum": 5 },
+    "theme_investability": { "type": "number", "minimum": 0, "maximum": 5 },
+    "evidence_quality": { "type": "number", "minimum": 0, "maximum": 5 },
+    "narrative_heat": { "type": "number", "minimum": 0, "maximum": 5 },
+    "consensus_risk": { "type": "number", "minimum": 0, "maximum": 5 },
+    "expression_purity": { "type": "number", "minimum": 0, "maximum": 5 },
+    "disconfirmation_pressure": { "type": "number", "minimum": 0, "maximum": 5 },
+    "reunderwrite_priority": { "type": "number", "minimum": 0, "maximum": 10 }
+  },
+  "additionalProperties": true
+}
