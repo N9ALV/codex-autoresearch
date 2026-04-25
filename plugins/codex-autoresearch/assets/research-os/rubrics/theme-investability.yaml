@@ -1,0 +1,25 @@
+id: theme-investability
+scale: 1-5
+purpose: Score whether a valid theme has clean, robust, and reasonably priced public-market expressions.
+criteria:
+  - id: pure_play_availability
+    label: Pure-play availability
+    weight: 0.15
+  - id: financial_sensitivity
+    label: Financial sensitivity
+    weight: 0.20
+  - id: valuation_attractiveness
+    label: Valuation attractiveness
+    weight: 0.15
+  - id: competitive_value_capture
+    label: Competitive value capture
+    weight: 0.15
+  - id: scenario_robustness
+    label: Scenario robustness
+    weight: 0.15
+  - id: liquidity_implementation_quality
+    label: Liquidity / implementation quality
+    weight: 0.10
+  - id: portfolio_fit
+    label: Portfolio fit
+    weight: 0.10
