@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex Autoresearch</title>
+    <meta
+      name="description"
+      content="No-build Cloudflare publishing surface for Codex Autoresearch and the Research OS scaffold."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div class="eyebrow">Cloudflare publishing surface</div>
+        <h1>Codex Autoresearch</h1>
+        <p class="lead">
+          This repository now includes a small, no-build static surface so Cloudflare can publish it
+          directly from GitHub while the fuller renderer remains separate.
+        </p>
+        <div class="actions">
+          <a class="button" href="/research-os/">Open Research OS guide</a>
+          <a class="button-secondary" href="https://github.com/N9ALV/codex-autoresearch">View repository</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <div class="kicker">What this is</div>
+          <h3>Read-only publishing</h3>
+          <p>
+            The Cloudflare side is intentionally limited to static publishing. Research work stays in
+            Git and local agent workflows.
+          </p>
+        </article>
+        <article class="card">
+          <div class="kicker">Why no build</div>
+          <h3>Git sync friendly</h3>
+          <p>
+            The current deployment can succeed with a plain <code>wrangler deploy</code> because the
+            published files live under <code>public/</code>.
+          </p>
+        </article>
+        <article class="card">
+          <div class="kicker">Next evolution</div>
+          <h3>Replace when ready</h3>
+          <p>
+            Once a proper research-site renderer exists, this can move to the documented build output
+            flow such as <code>dist/</code> on Pages.
+          </p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Available now</h2>
+        <ol>
+          <li>A stable root landing page for the Git-synced Cloudflare project.</li>
+          <li>A rendered Research OS publishing guide at <a href="/research-os/">/research-os/</a>.</li>
+          <li>A deployment path that does not require a local install or build stage.</li>
+        </ol>
+        <div class="notice">
+          <p>
+            If you later switch this project to Cloudflare Pages, keep GitHub as the source of truth
+            and treat Cloudflare as read-only publishing unless requirements materially change.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        Static publishing surface for the <a href="https://github.com/N9ALV/codex-autoresearch">codex-autoresearch</a>
+        repository.
+      </footer>
+    </main>
+  </body>
+</html>

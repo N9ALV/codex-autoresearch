@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research OS Scaffold</title>
+    <meta
+      name="description"
+      content="Cloudflare publishing guidance for the Codex Autoresearch thematic Research OS scaffold."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div class="eyebrow">Research OS scaffold</div>
+        <h1>Thematic Research OS</h1>
+        <p class="lead">
+          A Git-native research workspace shape with Cloudflare used as a read-only publishing layer,
+          not the research execution layer.
+        </p>
+        <div class="actions">
+          <a class="button" href="/">Back to home</a>
+          <a class="button-secondary" href="https://github.com/N9ALV/codex-autoresearch/tree/main/docs/research-os">View source docs</a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Intended shape</h2>
+        <pre><code>local / external agents
+  -&gt; write Markdown, YAML, JSON, JSONL, and CSV research outputs
+  -&gt; commit those outputs to GitHub branches
+  -&gt; review diffs / pull requests
+  -&gt; publish the read-only version through Cloudflare</code></pre>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <div class="kicker">Doctrine</div>
+          <h3>Research stays file-native</h3>
+          <p>
+            Themes organise the work. Companies are expressions. Portfolios are bundles of exposures.
+            Scenario work, evidence quality, and review queues stay explicit in repository files.
+          </p>
+        </article>
+        <article class="card">
+          <div class="kicker">Cloudflare role</div>
+          <h3>Read-only publishing</h3>
+          <p>
+            Use Cloudflare to publish reviewed output. Keep writes in Git branches, pull requests, and
+            agent-reviewed commits.
+          </p>
+        </article>
+        <article class="card">
+          <div class="kicker">Current setup</div>
+          <h3>No-build placeholder</h3>
+          <p>
+            This repo currently ships a static placeholder surface so Git-synced Cloudflare deploys can
+            succeed before a fuller renderer exists.
+          </p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Recommended repository layout</h2>
+        <pre><code>themes/
+  registry.yaml
+  collision-map.yaml
+  active/&lt;theme-id&gt;/
+    thesis.md
+    causal-chain.md
+    scenarios.yaml
+    evidence-log.jsonl
+    exposure-map.csv
+    expression-universe.yaml
+    linked-companies.yaml
+    portfolio-exposure.yaml
+    disconfirming-evidence.md
+    review-history.jsonl
+
+companies/
+  registry.yaml
+  reviews/&lt;company-id&gt;/
+  theme-expression-scores/&lt;company-id&gt;.yaml
+
+portfolios/
+  holdings.csv
+  theme-exposure-ledger.csv
+  reunderwriting-queue.md
+
+rubrics/
+  theme-validity.yaml
+  theme-investability.yaml
+  company-expression-quality.yaml
+  basket-expression-quality.yaml
+  portfolio-theme-exposure.yaml
+
+schemas/
+  theme.schema.json
+  scenario.schema.json
+  metrics.schema.json
+  evidence.schema.json
+
+outputs/
+  theme-memos/
+  company-memos/
+  portfolio-reviews/</code></pre>
+      </section>
+
+      <section class="panel">
+        <h2>Cloudflare publishing path</h2>
+        <ol>
+          <li>Keep GitHub as the source of truth for research files.</li>
+          <li>Use Git-based production and preview deployments.</li>
+          <li>Gate readers with Cloudflare Access if the research is private.</li>
+          <li>Keep heavy raw artifacts out of Git until object storage is genuinely needed.</li>
+          <li>Defer Workers, D1, Vectorize, Queues, and Workflows unless requirements change.</li>
+        </ol>
+        <div class="notice">
+          <p>
+            Clean current architecture: local agents do research, GitHub stores research memory,
+            Cloudflare publishes the read-only output, and Access can gate readers if needed.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        Based on the source guide in <a href="https://github.com/N9ALV/codex-autoresearch/tree/main/docs/research-os">docs/research-os</a>.
+      </footer>
+    </main>
+  </body>
+</html>

@@ -132,6 +132,18 @@ npm ci
 npm run build:research-site
 ```
 
+This repository also includes a minimal no-build publishing surface for early Git-synced Cloudflare deploys:
+
+```text
+wrangler.jsonc
+public/
+  index.html
+  research-os/index.html
+  404.html
+```
+
+That path is intended as a temporary placeholder only. Once the dedicated research renderer exists, point Cloudflare at the renderer output instead.
+
 Output directory example:
 
 ```text

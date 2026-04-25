@@ -4,6 +4,11 @@ All notable user-facing changes to Codex Autoresearch are recorded here.
 
 This project uses a root-only changelog because the root README is the public documentation surface for the plugin wrapper.
 
+## Unreleased
+
+- Added a no-build Cloudflare static publishing surface under `public/` plus a root `wrangler.jsonc`, so Git-synced Cloudflare deploys can publish a placeholder site immediately while the fuller research renderer is still separate.
+- Documented the temporary no-build Cloudflare path in the Research OS publishing guide.
+
 ## 1.1.10
 
 - Moved dashboard and inspection CLI logic into focused command modules and clarified the empty top-level commands documentation expectation.
