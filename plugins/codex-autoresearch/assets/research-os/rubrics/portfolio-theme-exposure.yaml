@@ -1,0 +1,20 @@
+id: portfolio-theme-exposure
+scale: 1-5
+purpose: Prioritize portfolio re-underwriting by theme concentration, thesis fragility, stale evidence, and downside asymmetry.
+formula: portfolio_weight * thesis_fragility * evidence_staleness * downside_asymmetry
+criteria:
+  - id: gross_theme_exposure
+    label: Gross theme exposure
+    weight: 0.20
+  - id: evidence_staleness
+    label: Evidence staleness
+    weight: 0.20
+  - id: thesis_fragility
+    label: Thesis fragility
+    weight: 0.25
+  - id: downside_asymmetry
+    label: Downside asymmetry
+    weight: 0.25
+  - id: correlation_collision_risk
+    label: Correlation / collision risk
+    weight: 0.10
