@@ -1,0 +1,21 @@
+theme_id: example-theme
+as_of: 2026-04-25
+scenarios:
+  - id: bear-bottleneck
+    label: Bear / bottleneck case
+    weight: 0.30
+    narrative: The theme is real but constrained by supply, policy, capital cost, or timing.
+    drivers: []
+    disconfirming_signals: []
+  - id: base
+    label: Base case
+    weight: 0.50
+    narrative: The theme progresses at a steady, underwritable pace.
+    drivers: []
+    disconfirming_signals: []
+  - id: bull-acceleration
+    label: Bull / acceleration case
+    weight: 0.20
+    narrative: Adoption or spending accelerates and value capture improves.
+    drivers: []
+    disconfirming_signals: []
